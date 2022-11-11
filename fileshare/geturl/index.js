@@ -30,6 +30,7 @@ module.exports = async function (context, req) {
 
   try {
     // Get SAS token
+     
     const sasInfo = await generateReadOnlySASUrl(
       storageConnectionString,
       containerName,
